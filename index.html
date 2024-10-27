@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- 
+
+PROMOUVOIR LE FESTIVAL DE MUSIQUE
+
+CONDITIONS : 
+
+- HEADER + NAV + MAIN + SECTION (+ARTICLE) + ASIDE + FOOTER
+
+
+- INSERER DES COMMENTAIRES (SECTION PRINCIPALE PRESENTANT LE FESTIVAL, ETC...)
+
+
+- CONTENU MULTIMEDIA : 
+    - VIDEO AVEC BALISE VIDEO : AVEC CONTROLS ET POSTER ET TEXTE ALTERNATIF
+    - AUDIO AVEC BALISE AUDIO : AVEC CONTROLS ET TEXTE ALTERNATIF + VOTRE NAVIGATEUR NE SUPPORTE PAS LA BALISE AUDIO EN TEXTE SI L'AUDIO N'APPARAIT PAS
+    - CARTE INTERACTIVE AVEC IFRAME : GOOGLE MAPS
+
+
+- FORMULAIRE
+    - NOM : CHAMP TEXTE
+    - EMAIL : CHAMP EMAIL
+    - SUJET : LISTE DEROULANTE
+    - MESSAGE : ZONE DE TEXTE
+    - BOUTON D'ENVOI 
+- STYLE DU FORMULAIRE
+    - BORDURES
+    - COULEURS
+    - ESPACEMENTS
+    - :FOCUS
+    - :HOVER
+
+
+
+- STYLES GENERAUX : 
+    - :link / :visited, :hover, :active
+    - ::BEFORE
+    - ::AFTER
+    - FEUILLE EXTERNE STYLE.CSS
+    - COHERENCE VISUELLE ; COULEURS , TYPOGRAPHIE, IMAGES, ETC...
+    - PAS DE FLEXBOX NI DE GRID
+    - UTILISER DISPLAY (BLOCK, INLINE, INLINE-BLOCK)
+    - MARGIN ET PADDING
+    - POSITION (RELATIVE, ABSOLUTE, ETC...)
+
+
+- ACCESIBILITE : 
+    - ALT SUR LES IMAGES ET VIDEOS ET AUDIO
+    - LABELS SUR LES FORMULAIRES
+    - COMPATIBILITE AVEC NAVIGATEURS (A CHERCHER SUR GOOGLE)
+
+
+- RENDU ATTENDU
+    - INDEX.HTML
+    - STYLES.CSS
+    - DOSSIER IMAGES
+    - DOSSIER VIDEOS 
+    - DOSSIER AUDIOS
+
+    -->
+
+<body>
+    
+    <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="#programme">Programme</a></li>
+            <li class="submenu1">Infos Pratiques
+                <ul class="submenu2">
+                  <li><a href="#infosPratiques">Adresse et Horaires</a></li>
+                  <li><a href="#access">Accessibilité</a></li>
+                  <li><a href="#tarifs">Tarifs</a></li>
+                  <li><a href="#contact">Nous contacter</a></li>
+                </ul>
+              </li>
+            
+              <li><a href="#archives">Archives</a>
+                <ul class="submenu2">
+                  <li><a href="#ed24">Année 2024</a></li>
+                  <li><a href="#ed23">Année 2023</a></li>
+                  <li><a href="#ed22">Année 2022</a></li>
+                </ul>
+              </li>
+              
+          </ul>
+        </nav>
+      </header>
+
+<main>
+
+
+<section class="multimediatop">
+
+    <video src="videos/bienvenue.mp4" autoplay loop>
+        Votre navigateur ne supporte pas la balise vidé
+        o.
+    </video>
+</section>
+
+
+
+<section class="bienvenue">
+
+<h1>Festival Harmonie des Sons</h1>
+
+<div class="contentbienvenue">
+<p> Les ruelles pittoresques de notre ville résonneront bientôt des mélodies sublimes du Festival de Musique Classique. Sous la direction inspirée du chef d'orchestre Mark Ruben, un orchestre prestigieux livrera des interprétations magistrales de Vivaldi, Mozart et Beethoven.</p>
+<p>Pendant une semaine, le festival transportera les amateurs de musique à travers les époques, revisitant les chefs-d'œuvre du répertoire classique dans cinq villes différentes. Les concerts en plein air et les lieux historiques emblématiques offriront une expérience sensorielle unique.</p>
+<p>Les jeunes talents seront également mis à l'honneur, offrant des spectacles vibrants et émouvants. Des ateliers de découverte et des conférences enrichissantes permettront aux mélomanes d'approfondir leur connaissance et leur amour de la musique. Rejoignez-nous pour célébrer la grandeur de la musique classique et laissez-vous emporter par des symphonies majestueuses et des harmonies enchanteresses. Un rendez-vous à ne pas manquer pour tous les passionnés de musique et les curieux en quête de beauté et de sérénité.</p>
+</div>
+</section>
+
+
+<section id="programme" class="programme">
+
+<div class ="titreProgramme">
+    <h2>Programmation</h2>
+    <h3>Du 11 au 19 Juillet 2025</h3>
+    <p>13ème Edition</p>
+</div>
+
+<div class="concert">
+    <img src="images/program/1.jpeg" alt="Concert au Manoir de l'Avigneux le 11/07/2025" title="Concert au Manoir de l'Avigneux le 11/07/2025"><p>Concert au Manoir de l'Avigneux <br>Le 11/07/2025</p>
+</div>
+
+<div class="concert">
+<img src="images/program/2.jpeg" alt="Concert au Manoir de la Rouroux le 12/07/2025" title="Concert au Manoir de la Rouroux le 12/07/2025">
+<p>Concert au Manoir de la Rouroux<br>Le 12/07/2025</p>
+</div>
+
+
+<div class="concert">
+<img src="images/program/3.jpeg" alt="Concert au Manoir de la Bougnane le 13/07/2025" title="Concert au Manoir de la Bougnane le 13/07/2025">
+<p>Concert au Manoir de la Bougnane<br>Le 13/07/2025</p>
+</div>
+
+<div class="concert">
+<img src="images/program/4.jpeg" alt="Concert au Manoir de Colbeuge le 18/07/2025" title="Concert au Manoir de Colbeuge le 18/07/2025">
+<p>Concert au Manoir de Colbeuge<br>Le 18/07/2025</p>
+</div>
+
+<div class="concert">
+<img src="images/program/5.png" alt="Concert à la chapelle de la Martimont le 19/07/2025" title="Concert au Manoir de l'Avigneux le 10/07/2025">
+<p>Concert à la chapelle de la Martimont <br>Le 19/07/2025</p>
+</div>
+
+<p>Vous pouvez télécharger le programme en format PDF en cliquant ci-dessous : </p>
+<a class="bouton" href="programme.pdf" target="_blank" download="Programme.pdf">Télécharger en PDF</a>
+
+
+</section>
+
+
+<section id="infosPratiques" class="infosPratiques">
+
+<h2>Informations Pratiques</h2>
+
+
+    <div class="adresse">
+        <h4>Adresse</h4>
+        <p>84, chemin de Garnier <br>33916 Lenoirnec</p>
+        <h4>Téléphone</h4>
+        <a href="tel:+33782237810">07 82 23 78 10</a>
+        <h4>Email</h4>
+        <a href="mailto:contact@lafermegourmande.com">contact@lafermegourmande.com</a>
+    </div>
+
+
+
+    <div class="horaires">
+    
+        <h4 class ="titlehoraire">Nos horaires</h4>
+    
+        <table>
+            <tr>
+                <td>Lundi - Vendredi</td>
+                <td>10:00 - 18:30</td>
+            </tr>
+            <tr>
+                <td>Samedi</td>
+                <td>8:30 - 20:30</td>
+            </tr>
+            <tr>
+                <td>Dimanche</td>
+                <td>Fermé</td>
+            </tr>
+        </table>
+    
+    </div>
+
+
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d263564.20077883336!2d-0.5825505678671762!3d44.83986776821982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1729974445773!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+
+    <div id="access">
+
+        <h3>Accessibilité</h3>
+
+        <p>L'accessibilité est une priorité essentielle pour notre Festival. Nous nous engageons à offrir une expérience agréable et inclusive pour tous les festivaliers. Les lieux de concert sont entièrement accessibles, avec des rampes d'accès et des ascenseurs pour les personnes à mobilité réduite. Des places de parking réservées sont disponibles à proximité de chaque site.</p>
+
+        <p>Des dispositifs d'aide à l'audition sont également mis à disposition pour les malentendants, permettant à chacun de profiter pleinement des performances musicales. Nous offrons des programmes en braille et en gros caractères pour les malvoyants, garantissant ainsi une accessibilité optimale à l'information.</p>
+        
+        <p>Notre équipe de bénévoles est formée pour assister et accompagner les personnes en situation de handicap tout au long de leur visite. Des espaces de repos adaptés et des services d'accompagnement personnalisés sont également prévus pour assurer le confort de tous les participants.        
+        Nous croyons fermement que la musique classique est un art universel, et nous nous efforçons de créer un environnement où chacun peut apprécier la magie des concerts dans les meilleures conditions possibles. </p>
+
+    </div>
+
+
+
+    <div id="tarifs" class="tarifs">
+    
+        <h4 class ="titletarifs">Nos tarifs</h4>
+    
+        <table>
+            <tr>
+                <td>Adultes</td>
+                <td>50€</td>
+            </tr>
+            <tr>
+                <td>Etudiants et Séniors (65 ans et plus)</td>
+                <td>35€</td>
+            </tr>
+            <tr>
+                <td>Enfant (Moins de 12 ans)</td>
+                <td>20€</td>
+            </tr>
+        </table>
+    
+    </div>
+
+
+
+    <div id="contact" class="contact">
+
+        <h4>Nous contacter</h4>
+    
+    <form method="get" action="" >
+    
+        <ul>
+            <li> 
+                <label for="nom">Nom</label> 
+                <input class="reponse" type="text" id="nom" name="nom" placeholder="Votre nom" required>
+            </li>
+
+
+            <li> 
+                <label for="prenom">Prénom</label> 
+                <input class="reponse" type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+            </li>
+    
+    
+    
+            <li> 
+                <label for="email">Email</label> 
+                <input class="reponse" type="email" id="email" name="email" placeholder="Votre e-mail" required>
+            </li>
+        
+
+            <li>
+            <label for="sujet">Votre sujet</label>
+            <select class = "reponse" name="sujet" id="sujet">
+              <option value="ddeinfos">Demande d'informations</option>
+              <option value="sav">Service après-vente</option>
+              <option value="reclamation">Réclamation</option>
+              <option value="partenariat">Partenariat</option>
+              <option value="autres">Autres</option>
+            </select>
+            </li>
+    
+
+           <li> 
+                <label>Votre message ici</label> <textarea class="reponse" name="message" placeholder="Ecrivez-nous"></textarea>
+            </li>
+    
+        
+            <li><input class="bouton" type="submit" value="Envoyer"></li>
+
+
+
+        </ul>
+    
+    </form>
+
+    </div>
+  
+</section>
+
+
+
+
+
+
+<section id="archives" class="archives">
+    <h2>Archives</h2>
+
+    <h3 id="ed24">Harmonie des sons - 12ème édition - 2024</h3>    
+    
+    <div>
+        <p><video controls poster="images/apercus/ed24.jpg" ><source src="videos/ed24.mp4" type="video/mp4">Votre navigateur ne supporte pas la balise vidéo.</video></p>
+
+        <p><audio controls><source src="audio/ed24.mp3" type="audio/mpeg">Votre navigateur ne supporte pas la balise audio.</audio></p>
+    </div>
+
+
+    <h3 id="ed23">Harmonie des sons - 11ème édition - 2023</h3>    
+    
+    <div>
+        <p><video controls poster="images/apercus/ed23.jpg"><source src="videos/ed23.mp4" type="video/mp4">Votre navigateur ne supporte pas la balise vidéo.</video></p>
+
+        <p><audio controls><source src="audio/ed23.mp3" type="audio/mpeg">Votre navigateur ne supporte pas la balise audio.</audio></p>
+    </div>
+
+    <h3 id="ed22">Harmonie des sons - 10ème édition - 2022</h3>    
+    
+    <div>
+        <p><video controls poster="images/apercus/ed22.jpg"><source src="videos/ed22.mp4" type="video/mp4">Votre navigateur ne supporte pas la balise vidéo.</video></p>
+
+        <p><audio controls><source src="audio/ed22.mp3" type="audio/mpeg">Votre navigateur ne supporte pas la balise audio.</audio></p>
+    </div>
+
+
+</section>
+
+
+
+
+
+</main>
+
+
+<footer>
+    <p>
+    Copyright 2024 - <a href="" target="_blank">Mentions Légales</a> - <a href="" target="_blank">Politique de confidentialité</a>
+    </p>
+    
+    </footer>
+
+</body>
+</html>
