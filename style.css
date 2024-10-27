@@ -389,6 +389,10 @@ td, th {
     content: "🎥 ";
   }
   
+  .archives .audio::before, .archives .audio::after {
+    content: "♫";
+    font-size: 2.5rem;
+  }
 
 .archives h3{
     scroll-margin-top: 60px;
